@@ -1,0 +1,14 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "ctdfoods:blocks/blocksalt"
+			
+        }
+    },
+    "variants": {
+        "normal": {
+            "model": "cube_all"
+        }
+    }
+}
