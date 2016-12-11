@@ -32,6 +32,5 @@ public class BasicCrop extends BlockCrops
 	{
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setCreativeTab(CTDFoods.creativeTab);
 	}
 }

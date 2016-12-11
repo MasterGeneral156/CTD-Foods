@@ -1,0 +1,50 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "cross"
+	},
+	"variants": {
+		"age": {
+			"0": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_1"
+				}
+			},
+			"1": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_2"
+				}
+			},
+			"2": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_3"
+				}
+			},
+			"3": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_4"
+				}
+			},
+			"4": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_5"
+				}
+			},
+			"5": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_6r"
+				}
+			},
+			"6": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_7r"
+				}
+			},
+			"7": {
+				"textures": {
+					"cross": "ctdfoods:blocks/crop_grape_8r"
+				}
+			}
+		}
+	}
+}

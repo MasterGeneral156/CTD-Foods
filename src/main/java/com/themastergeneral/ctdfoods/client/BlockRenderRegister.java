@@ -14,6 +14,8 @@ public final class BlockRenderRegister
 	{
 	    reg(ModBlocks.blocksalt);
 	    reg(ModBlocks.croptomato);
+	    reg(ModBlocks.cropggrape);
+	    reg(ModBlocks.croprgrape);
 	}
 
 	public static void reg(Block block) 

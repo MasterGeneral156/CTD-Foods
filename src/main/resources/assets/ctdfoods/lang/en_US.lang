@@ -12,8 +12,17 @@ item.rawpatty.name=Raw Hamburger Patty
 item.tomato.name=Tomato
 item.tomatoslice.name=Tomato Slice
 item.tomatoseed.name=Tomato Seeds
+item.meatseed.name=Growable Meat Seed
+item.growablemeat.name=Growable Meat
+item.rgrape.name=Red Grapes
+item.ggrape.name=Green Grapes
+item.rgrapeseed.name=Red Grape Seeds
+item.ggrapeseed.name=Green Grape Seeds
 
 itemGroup.ctdfoods=CTD Foods
 
 tile.blocksalt.name=Salty Block
 tile.croptomato.name=Tomato Crops
+tile.cropmeat.name=Growable Meat Crops
+tile.croprgrape.name=Red Grape Crops
+tile.cropggrape.name=Green Grape Crops
