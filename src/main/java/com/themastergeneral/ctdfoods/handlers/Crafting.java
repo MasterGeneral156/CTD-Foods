@@ -6,6 +6,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class Crafting 
@@ -30,6 +31,12 @@ public class Crafting
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawbacon, 3), ModItems.knife, Items.PORKCHOP);
 		//Tomato Slices
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.tomatoslice, 6), ModItems.knife, ModItems.tomato);
+		//Burger Patty
+		GameRegistry.addRecipe(new ItemStack(ModItems.burgerpatty), "B", "M", "B", 'B', Items.BREAD, 'M', ModItems.cookedpatty);
+		//Tomato Burger Patty
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.burgerpattytomato), ModItems.tomatoslice, ModItems.burgerpatty);
+		//Growable Meat Seed
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.meatseed), "FBF", "BSB", "FBF", 'S', "seed", 'F', Items.ROTTEN_FLESH, 'B', Items.BONE));
 	}
 	public static void addSmelting()
 	{
@@ -37,5 +44,19 @@ public class Crafting
 		GameRegistry.addSmelting(ModItems.rawbacon, new ItemStack(ModItems.cookedbacon), 0.117F);
 		//Cooked Patty
 		GameRegistry.addSmelting(ModItems.rawpatty, new ItemStack(ModItems.cookedpatty), 0.175F);
+	}
+	public static void OreDict()
+	{
+		OreDictionary.registerOre("seed", ModItems.tomatoseed);
+		OreDictionary.registerOre("seed", Items.WHEAT_SEEDS);
+		OreDictionary.registerOre("seed", Items.BEETROOT_SEEDS);
+		OreDictionary.registerOre("seed", ModItems.meatseed);
+		OreDictionary.registerOre("crop", Items.BEETROOT);
+		OreDictionary.registerOre("crop", Items.CARROT);
+		OreDictionary.registerOre("crop", Items.POTATO);
+		OreDictionary.registerOre("crop", Items.WHEAT);
+		OreDictionary.registerOre("crop", Items.POISONOUS_POTATO);
+		OreDictionary.registerOre("crop", ModItems.tomato);
+		OreDictionary.registerOre("crop", ModItems.growablemeat);
 	}
 }

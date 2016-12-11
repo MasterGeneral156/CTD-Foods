@@ -12,10 +12,12 @@ public class ModBlocks
 {
 	public static BasicBlock blocksalt;
 	public static BasicCrop croptomato;
+	public static BasicCrop cropmeat;
 	public static void init()
 	{
 		blocksalt = register(new BasicBlock(Material.GROUND, "blocksalt"));
 		croptomato = register(new TomatoCrop("croptomato"));
+		cropmeat = register(new MeatCrop("cropmeat"));
 	}
 	private static <T extends Block> T register (T block, ItemBlock itemBlock) 
 	{

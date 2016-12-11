@@ -18,8 +18,12 @@ public class ModItems
 	public static BasicFood tomato;
 	public static BasicFood tomatoslice;
 	public static BasicSeed tomatoseed;
+	public static BasicSeed meatseed;
 	public static BasicFood cookedpatty;
 	public static BasicFood rawpatty;
+	public static BasicFood burgerpatty;
+	public static BasicFood burgerpattytomato;
+	public static BasicFood growablemeat;
 	public static void init() 
 	{
 		knife = register(new BasicTool("knife"));
@@ -33,6 +37,10 @@ public class ModItems
 		tomato = register(new BasicFood("tomato", 2, 2F, false));
 		tomatoslice = register(new BasicFood("tomatoslice", 1, 0.25F, false));
 		tomatoseed = register(new BasicSeed("tomatoseed", ModBlocks.croptomato, Blocks.FARMLAND));
+		meatseed = register(new BasicSeed("meatseed", ModBlocks.cropmeat, Blocks.FARMLAND));
+		burgerpatty = register(new BasicFood("burgerpatty", 13, 1.467F, false));
+		burgerpattytomato = register(new BasicFood("burgerpattytomato", 13, 1.5F, false));
+		growablemeat = register(new BasicFood("growablemeat", 0, 0.1F, false));
 	}
 	private static <T extends Item> T register(T item) 
 	{

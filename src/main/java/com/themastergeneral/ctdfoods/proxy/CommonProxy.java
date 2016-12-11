@@ -23,6 +23,7 @@ public class CommonProxy
     }
     public void init(FMLInitializationEvent e) 
     {
+    	Crafting.OreDict();
     	Crafting.addRecipes();
     	Crafting.addSmelting();
     }

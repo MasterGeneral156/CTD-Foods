@@ -1,0 +1,19 @@
+item.burgerpatty.name=Hamburger
+item.burgerpattytomato=Hamburger with Tomato
+item.burgerpattytomatobacon=Bacon Hamburger with Tomato
+item.container.name=Empty Container
+item.containermilk.name=Container of Milk
+item.containerwater.name=Container of Water
+item.cookedbacon.name=Bacon Strip
+item.cookedpatty.name=Hamburger Patty
+item.knife.name=Kitchen Knife
+item.rawbacon.name=Raw Bacon Strip
+item.rawpatty.name=Raw Hamburger Patty
+item.tomato.name=Tomato
+item.tomatoslice.name=Tomato Slice
+item.tomatoseed.name=Tomato Seeds
+
+itemGroup.ctdfoods=CTD Foods
+
+tile.blocksalt.name=Salty Block
+tile.croptomato.name=Tomato Crops

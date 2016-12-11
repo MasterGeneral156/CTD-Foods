@@ -1,13 +1,13 @@
 [
-{
-  "modid": "ctdfoods",
-  "name": "CTD Foods",
-  "version": "1.0",
-  "description": "Adds misc. foods based around vanilla.",
-  "url": "",
-  "updateUrl": "",  
-  "credits": "",
-  "logoFile": "",
-  "authors": ["TheMasterGeneral"]
-}
+	{
+	  "modid": "ctdfoods",
+	  "name": "CTD Foods",
+	  "version": "1.0.0 - Alpha 1",
+	  "description": "Adds misc. foods based around vanilla.",
+	  "url": "",
+	  "updateUrl": "",  
+	  "credits": "",
+	  "logoFile": "",
+	  "authors": ["TheMasterGeneral"]
+	}
 ]
