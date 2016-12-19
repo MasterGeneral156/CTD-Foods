@@ -11,6 +11,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class Crafting 
 {
+	//Add crafting recipes.
 	public static void addRecipes() 
 	{
 		//Raw Patty
@@ -38,6 +39,7 @@ public class Crafting
 		//Growable Meat Seed
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.meatseed), "FBF", "BSB", "FBF", 'S', "seed", 'F', Items.ROTTEN_FLESH, 'B', Items.BONE));
 	}
+	//Add furnace recipes.
 	public static void addSmelting()
 	{
 		//Cooked Bacon
@@ -45,8 +47,10 @@ public class Crafting
 		//Cooked Patty
 		GameRegistry.addSmelting(ModItems.rawpatty, new ItemStack(ModItems.cookedpatty), 0.175F);
 	}
+	//Register items to the ore dictionary.
 	public static void OreDict()
 	{
+		//First is Ore Dictionary name, second is item itself.
 		OreDictionary.registerOre("seed", ModItems.tomatoseed);
 		OreDictionary.registerOre("seed", Items.WHEAT_SEEDS);
 		OreDictionary.registerOre("seed", Items.BEETROOT_SEEDS);
