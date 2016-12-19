@@ -31,6 +31,7 @@ public class ModItems
 	public static BasicSeed meatseed;
 	public static BasicSeed ggrapeseed;
 	public static BasicSeed rgrapeseed;
+	//Create the items using their needed constructors.
 	public static void init() 
 	{
 		knife = register(new BasicTool("knife"));
@@ -55,6 +56,7 @@ public class ModItems
 		ggrapeseed = register(new BasicSeed("ggrapeseed", ModBlocks.cropggrape, Blocks.FARMLAND));
 		rgrapeseed = register(new BasicSeed("rgrapeseed", ModBlocks.croprgrape, Blocks.FARMLAND));
 	}
+	//Register the items. Give them their model, too.
 	private static <T extends Item> T register(T item) 
 	{
 		GameRegistry.register(item);
