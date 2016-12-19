@@ -10,6 +10,7 @@ import com.themastergeneral.ctdfoods.blocks.ModBlocks;
 
 public final class BlockRenderRegister 
 {
+	//Register block models.
 	public static void registerBlockRenderer() 
 	{
 	    reg(ModBlocks.blocksalt);
@@ -17,7 +18,8 @@ public final class BlockRenderRegister
 	    reg(ModBlocks.cropggrape);
 	    reg(ModBlocks.croprgrape);
 	}
-
+	
+	//Sets Model Resource location for blocks.
 	public static void reg(Block block) 
 	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()

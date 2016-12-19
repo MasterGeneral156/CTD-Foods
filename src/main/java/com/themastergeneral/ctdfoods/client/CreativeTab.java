@@ -10,17 +10,17 @@ public class CreativeTab extends CreativeTabs
 {
 	public CreativeTab() 
 	{
-		super(CTDFoods.MODID);
+		super(CTDFoods.MODID);		//Unlocalized tab name, maybe?
 	}
 	@Override
 	public Item getTabIconItem() 
 	{
-		return Items.APPLE;
+		return Items.APPLE;			//Tab icon. Change to whatever.
 	}
 	@Override
 	public boolean hasSearchBar() 
 	{
-		return false;
+		return false;				//Set to true to allow tab to have a search bar.
 	}
 
 }
