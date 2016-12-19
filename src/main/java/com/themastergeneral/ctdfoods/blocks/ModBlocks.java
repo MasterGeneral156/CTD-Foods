@@ -15,6 +15,8 @@ public class ModBlocks
 	public static BasicCrop cropmeat;
 	public static BasicCrop cropggrape;
 	public static BasicCrop croprgrape;
+	
+	//Register the blocks!
 	public static void init()
 	{
 		blocksalt = register(new BasicBlock(Material.GROUND, "blocksalt"));
@@ -23,6 +25,7 @@ public class ModBlocks
 		cropggrape = register(new GGrapeCrop("cropggrape"));
 		croprgrape = register(new RGrapeCrop("croprgrape"));
 	}
+	//Register models, registry names, etc.
 	private static <T extends Block> T register (T block, ItemBlock itemBlock) 
 	{
 	   	 GameRegistry.register(block);

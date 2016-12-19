@@ -6,6 +6,11 @@ import com.themastergeneral.ctdfoods.CTDFoods;
 import com.themastergeneral.ctdfoods.client.ItemModelProvider;
 import com.themastergeneral.ctdfoods.items.ModItems;
 
+/*
+	Meat Crop Class
+	Creates a BasicCrop with specified data.
+*/
+
 public class MeatCrop extends BasicCrop implements ItemModelProvider 
 {
 	protected String name;
@@ -15,12 +20,13 @@ public class MeatCrop extends BasicCrop implements ItemModelProvider
 	}
 	public Item getSeed() 
 	{
-		return ModItems.meatseed;
+		return ModItems.meatseed;		//When crop is broken, what seed returns
 	}
 	public Item getCrop() 
 	{
-		return ModItems.growablemeat;
+		return ModItems.growablemeat;	//When crop is fully grown and broken, what crop returns
 	}
+	//Register crop's item model.
 	@Override
 	public void registerItemModel(Item itemBlock) 
 	{

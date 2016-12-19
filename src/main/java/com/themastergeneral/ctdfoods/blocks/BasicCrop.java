@@ -26,6 +26,11 @@ import com.themastergeneral.ctdfoods.CTDFoods;
 import com.themastergeneral.ctdfoods.client.ItemModelProvider;
 import com.themastergeneral.ctdfoods.items.ModItems;
 
+/*
+	Basic Crop Class
+	Used to register a block that's also a Block Crop.
+*/
+
 public class BasicCrop extends BlockCrops
 {
 	public BasicCrop(String name) 
