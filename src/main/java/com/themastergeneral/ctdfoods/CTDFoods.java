@@ -14,20 +14,20 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = CTDFoods.MODID, name = CTDFoods.MODNAME, version = CTDFoods.VERSION)
+@Mod(modid = CTDFoods.MODID, name = CTDFoods.MODNAME, version = CTDFoods.VERSION)	//Make mod a true mod!
 public class CTDFoods 
 {
 
-    public static final String MODID = "ctdfoods";
-    public static final String MODNAME = "CTD Foods";
-    public static final String VERSION = "1.0.0 - Alpha 2";
+    public static final String MODID = "ctdfoods";			//Mod ID
+    public static final String MODNAME = "CTD Foods";		//Mod Name
+    public static final String VERSION = "1.0.0 - Alpha 2";	//Mod Version
     
     //Creative Tab
     public static final CreativeTabs creativeTab = new CreativeTab();
         
     @Instance
     public static CTDFoods instance = new CTDFoods();
-    public static Logger logger;
+    public static Logger logger;	//FML logging soonish.
     
     @SidedProxy(clientSide="com.themastergeneral.ctdfoods.proxy.ClientProxy", serverSide="com.themastergeneral.ctdfoods.proxy.ServerProxy")
     public static CommonProxy proxy;
