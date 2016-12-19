@@ -17,15 +17,15 @@ public class CommonProxy
 	public static Logger logger;
     public void preInit(FMLPreInitializationEvent e) 
     {
-    	ModBlocks.init();
-    	ModItems.init();
-    	SeedDrop.init();
+    	ModBlocks.init();	//Add blocks to game.
+    	ModItems.init();	//Add items to game.
+    	SeedDrop.init();	//Add seed drops to grass.
     }
     public void init(FMLInitializationEvent e) 
     {
-    	Crafting.OreDict();
-    	Crafting.addRecipes();
-    	Crafting.addSmelting();
+    	Crafting.OreDict();			//Add items to ore dictionary.
+    	Crafting.addRecipes();		//Add crafting recipes.
+    	Crafting.addSmelting();		//Add smelting recipes.
     }
 
     public void postInit(FMLPostInitializationEvent e) 

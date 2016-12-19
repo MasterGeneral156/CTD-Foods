@@ -9,6 +9,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.themastergeneral.ctdfoods.client.BlockRenderRegister;
 
+//Client side proxy
+
 public class ClientProxy extends CommonProxy 
 {
     @Override
@@ -21,7 +23,7 @@ public class ClientProxy extends CommonProxy
     public void init(FMLInitializationEvent e) 
     {
         super.init(e);
-        BlockRenderRegister.registerBlockRenderer();
+        BlockRenderRegister.registerBlockRenderer();	//Register block renderer
     }
 
     @Override
@@ -29,8 +31,10 @@ public class ClientProxy extends CommonProxy
     {
         super.postInit(e);
     }
+	//Item Render Register
     public void registerItemRenderer(Item item, int meta, String id)
     {
+		//Sets resource location for items.
     	 ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation("ctdfoods:" + id, "inventory"));
     }
 }
